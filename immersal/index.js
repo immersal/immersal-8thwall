@@ -190,7 +190,7 @@ const immersalPipelineModule = () => {
       const { textureWidth, textureHeight } = frameStartResult
       const { rows, cols, rowBytes, pixels } = processCpuResult.immersal
 
-      const fy = 0.5 * intrinsics[5] * textureWidth
+      const fy = 0.5 * intrinsics[5] * textureHeight
       const cx = 0.5 * (intrinsics[8] + 1.0) * textureWidth
       const cy = 0.5 * (intrinsics[9] + 1.0) * textureHeight
 
